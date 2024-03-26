@@ -1,0 +1,13 @@
+#!/bin/sh
+current_branch=`git branch | grep '*' | sed 's/* //'`
+
+if [ "$current_branch" = "master" ]; then
+    echo "Committing now"
+    python3 test.py
+    if [ $? -eq 0 ]; then
+        exit 0
+    else
+        echo "Some tests failed. Check and try again"
+        exit 1
+    fi
+fi

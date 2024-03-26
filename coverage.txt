@@ -1,0 +1,19 @@
+============================= test session starts =============================
+platform win32 -- Python 3.9.0, pytest-8.1.1, pluggy-1.4.0
+rootdir: C:\Users\hardi\dockerfolder
+plugins: anyio-3.6.2, cov-5.0.0
+collected 1 item
+
+test.py .                                                                [100%]
+
+----------- coverage: platform win32, python 3.9.0-final-0 -----------
+Name       Stmts   Miss  Cover
+------------------------------
+app.py        20     20     0%
+score.py      24     24     0%
+test.py       26      1    96%
+------------------------------
+TOTAL         70     45    36%
+
+
+============================= 1 passed in 28.06s ==============================
